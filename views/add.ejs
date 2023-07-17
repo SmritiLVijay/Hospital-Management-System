@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+<br>
+<div class="add_container">
+<p> <b>Enter details:</b>
+<form action="/<%=docName%>/add" method="post">
+<input class="inp" type="text" placeholder="Name" name="Name"><br><br>
+<input class="inp" type="text" placeholder="Age" name="age"><br><br>
+<input class="inp" type="text" placeholder="Phone Number" name="phNo"><br><br>
+<input class="inp" type="text" placeholder="E-mail" name="email"><br><br>
+<b>Patient History: </b> <br><br>
+<textarea class="history inp" name="history" rows="5" cols="121"></textarea><br><br>
+<input class="btn btn-dark custom" type="submit">
+</form>
+</p>
+</div>
+
+
+<button class="back_btn btn btn-dark custom"><a href="/<%=docName%>">Back</a></button>
+</div>
+<%- include("partials/footer"); -%>

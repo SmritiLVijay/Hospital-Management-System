@@ -1,0 +1,40 @@
+<%- include("partials/header"); -%>
+
+
+<div class="Update_container">
+
+
+    
+
+
+<p>Name: <%=pName%><form class="form-container" action="/<%=docName%>/<%=pID%>/update" method="post">
+    <input class="float-right btn btn-dark" type="submit" value="Update" name="update_btn">
+</form> <br>
+Age: <%=age%><form class="form-container" action="/<%=docName%>/<%=pID%>/update" method="post">
+    <input class="btn btn-dark" type="submit" value="Update" name="update_btn0">
+</form> <br>
+Phone Number: <%=phNo%><form class="form-container" action="/<%=docName%>/<%=pID%>/update" method="post">
+    <input class="btn btn-dark" type="submit" value="Update" name="update_btn1">
+</form> <br>
+E-mail: <%=email%><form class="form-container" action="/<%=docName%>/<%=pID%>/update" method="post">
+    <input class="btn btn-dark" type="submit" value="Update" name="update_btn2">
+</form> <br>
+Patient History: <br> <%=history%><form class="form-container" action="/<%=docName%>/<%=pID%>/update" method="post">
+    <input class="btn btn-dark" type="submit" value="Update" name="update_btn3">
+</form>
+</p>
+
+
+<form action="/<%=docName%>/<%=pID%>/delete" method="post">
+    <input class="btn btn-dark" type="submit" value="Delete Record" name="delete_btn4">
+</form>
+
+
+
+<br>
+<button class="btn btn-dark"><a href="/<%=docName%>">Back</a></button>
+
+
+
+</div>
+<%- include("partials/footer"); -%>

@@ -1,0 +1,34 @@
+<%- include("partials/header"); -%>
+<div class="box" id="heading">
+  <br>
+    <h1> Dr.<%= docName %>'s patient list: </h1>
+  </div>
+
+  <form action="/<%=docName%>" method="post" class="search">
+    <input type="text" placeholder="Patient Name" name="pName">
+    <input class="btn btn-dark " type="submit" value="Search" name="search_btn">
+  </form>
+  
+
+   
+<% patientList.forEach(function(patient){%>
+  <div class="patientSummary">
+  <p>Name: <%= patient.name %> <br>
+  Age: <%= patient.age %> <br>
+
+  Patient History: <%= patient.history.substring(0,100)+"..." %>
+  <a class="alink" href="/<%=docName%>/<%=patient._id%>">Read more</a> </p>
+</div>
+<% }) %>
+
+  
+  
+<form action="/<%=docName%>" method="post"  class="add_btn text-center">
+<input class="btn btn-dark custom" type="submit" name="add_btn" value="Add"/>
+</form>
+
+<div class="text-center">
+<button class="back_btn btn btn-dark custom"><a href="/">Back</a></button>
+</div>
+<%- include("partials/footer"); -%>
+

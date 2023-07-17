@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+<br>
+<div class="add_container">
+<p> <b>Update <%=edit%>: </b></p>
+<%if ( edit =="history" ){%>
+    <form action="/<%=docName%>/<%=pID%>/<%=edit%>" method="post">
+    <textarea class="history" name="updates" rows="5" cols="121"></textarea><br><br>
+    <input class="btn btn-dark" type="submit">
+    </form>
+    <%}else{%>
+<form action="/<%=docName%>/<%=pID%>/<%=edit%>" method="post">
+<input class="inp" type="text" name="updates"><br><br>
+<input class="btn btn-dark" type="submit">
+</form>
+<%}%>
+</div>
+
+
+<button class="back_btn btn btn-dark"><a href="/<%=docName%>/<%=pID%>">Back</a></button>
+</div>
+<%- include("partials/footer"); -%>
