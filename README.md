@@ -4,7 +4,7 @@ Home page:
 
 <img width="959" alt="image" src="https://github.com/SmritiLVijay/Hospital-Management-System/assets/90603503/0165d759-e183-443b-a9b2-a43e5ca85a02">
 
-When the name of Doctor is entered, it get stored in the database. The page will show all the patients data that was added for a particular doctor. This data gets entered to the patient collection as well as doctor collection:
+When the name of Doctor is entered, it gets stored in the database. The page will show all the patients' data that was added for a particular doctor. This data gets entered to the patient collection as well as doctor collection:
 
 <img width="960" alt="image" src="https://github.com/SmritiLVijay/Hospital-Management-System/assets/90603503/f8deb45f-e486-42a2-b2c1-7fa297aa2101">
 
@@ -14,7 +14,7 @@ The add button can be used to add new patient records:
 
 <img width="960" alt="image" src="https://github.com/SmritiLVijay/Hospital-Management-System/assets/90603503/e7421293-4aa7-4483-8821-bc56bcf63939">
 
-The searchbar can be used to show only the required records:
+The search-bar can be used to show only the required records:
 
 <img width="960" alt="image" src="https://github.com/SmritiLVijay/Hospital-Management-System/assets/90603503/bd7719c6-68f4-49ac-984a-58792aaf1fe9">
 
